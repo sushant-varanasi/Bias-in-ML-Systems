@@ -22,47 +22,47 @@ times the algorithm is biased on some features. They do this by learning the lat
 representation of those features from other features.
 ### Types of Biases
 There are various biases that can be a problem to the ML System. Some of them are:
-● Algorithm bias: This type of bias happens when the algorithm that performs the
+1. Algorithm bias: This type of bias happens when the algorithm that performs the
 calculations has some problems.
-● Prejudice bias: This type of bias happens if the data that is used to train the system
+2. Prejudice bias: This type of bias happens if the data that is used to train the system
 already have some stereotypes or faulty assumptions
-● Sample bias: This type of bias happens when there is a problem with the data that
+3. Sample bias: This type of bias happens when there is a problem with the data that
 is used to train the ML model. This mostly happens when the data is not big enough
 to teach the system.
-● Measurement bias: This type of bias arises due to problems under the data because
+4. Measurement bias: This type of bias arises due to problems under the data because
 of the way how the data is measured.
-● Exclusion bias: This type of bias arises when an important data point is left out of
+5. Exclusion bias: This type of bias arises when an important data point is left out of
 the data being used.
 ### How to identify and remove bias?
 ML Biases are concerning as machine learning models have started playing bigger roles in
 our lives, let it be loan application, medical diagnosis, etc. Therefore, the bias in machine
 learning won’t only give a result based on societal belief but will amplify them in society.
-2
+
 ### IDENTIFYING BIAS
 Bias can be assessed by looking at four key metrics:
-● Demographic parity — Should make positive predictions on a protected group at
+1. Demographic parity — Should make positive predictions on a protected group at
 the same rate as the entire population.
-● Disparate impact — Should not be knowing if protected population groups exist
+2. Disparate impact — Should not be knowing if protected population groups exist
 and which data points relate to such groups.
-● Equal opportunity - Should have equal positive rates on a protected group as those
+3. Equal opportunity - Should have equal positive rates on a protected group as those
 of the entire population.
-● Equalized odds - Should have both equal true positive and false positive rates on a
+4. Equalized odds - Should have both equal true positive and false positive rates on a
 protected group as those of the entire population.
 ### REMOVING BIAS
-● Data Pre-processing: Bias is reduced by manipulating the training data after
+1. Data Pre-processing: Bias is reduced by manipulating the training data after
 training the algorithm. It has two key problems:
-1. Technical - Data can be biased by making it difficult for an algorithm to
+i. Technical - Data can be biased by making it difficult for an algorithm to
 translate it to a new dataset which is both accurate and unbiased.
-2. Legal - In some cases it’s not allowed to train the algorithm on non-raw data.
-● Data Post-processing: Bias is reduced by manipulating the training data after
+ii. Legal - In some cases it’s not allowed to train the algorithm on non-raw data.
+2. Data Post-processing: Bias is reduced by manipulating the training data after
 training the algorithm
-● Lagrangian Approach: It incorporates fairness into the training algorithm itself by
+3. Lagrangian Approach: It incorporates fairness into the training algorithm itself by
 penalizing the impact of biased samples. This is done through a mathematical
 technique called Lagrange multipliers as input and uses them to influence the loss
 in the training algorithm.
-● Data Post-processing: Bias is reduced by manipulating the training data after
+4. Data Post-processing: Bias is reduced by manipulating the training data after
 training the algorithm
-3
+
 ### BIAS CORRECTION FRAMEWORK
 The first stage in the technique is to learn the values of λk representing the connection
 between the unbiased dataset y_true and the biased dataset y_bias. The learned λk values
